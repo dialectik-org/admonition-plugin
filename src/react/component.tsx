@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from 'react';
 
 import './css/admonition.css'
@@ -25,7 +26,7 @@ const getAdmonitionIcon = (type: string) => {
   }
 }
 
-const Admonition = ({ type, title, children } : AdmonitionProps) => {
+export const Admonition = ({ type, title, children } : AdmonitionProps) => {
   const getTitle = () => {
     if (title) {
       return title

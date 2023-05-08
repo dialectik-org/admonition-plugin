@@ -4,7 +4,7 @@ import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
 // Define the supported keywords
-const keywords = ['info', 'note', 'tip', 'caution', 'danger'];
+const keywords = ['info', 'tip', 'caution', 'danger'];
 
 export default function remarkCustomBlocks() {
   function transformer(tree : any) {

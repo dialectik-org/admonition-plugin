@@ -26,7 +26,7 @@ const getAdmonitionIcon = (type: string) => {
   }
 }
 
-export const Admonition = ({ type, title, children } : AdmonitionProps) => {
+const Admonition = ({ type, title, children } : AdmonitionProps) => {
   const getTitle = () => {
     if (title) {
       return title
@@ -57,3 +57,9 @@ export const Admonition = ({ type, title, children } : AdmonitionProps) => {
     </div>
   );
 };
+
+export function getComponents() {
+  return {
+    admonition : Admonition
+  }
+}
